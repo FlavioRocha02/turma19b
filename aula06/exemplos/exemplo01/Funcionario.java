@@ -25,4 +25,8 @@ public class Funcionario {
         salario = salario + salario * perc;
     }
 
+    @Override
+    public String toString() {
+        return nome + " : " + salario;
+    }
 }

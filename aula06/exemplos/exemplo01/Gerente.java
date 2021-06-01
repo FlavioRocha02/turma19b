@@ -17,4 +17,9 @@ public class Gerente extends Funcionario{
     public void aumentarSalario(double perc) {
         super.aumentarSalario(perc + 0.2);
     }
+
+    @Override
+    public String toString() {
+        return super.imprimir() + " : " + nFuncionarios;
+    }
 }

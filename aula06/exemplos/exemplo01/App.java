@@ -14,6 +14,8 @@ public class App {
         System.out.println(g.imprimir());
         System.out.println(f2.imprimir());
 
+        System.out.println(f);
+        System.out.println(g);
 
     }
 }
