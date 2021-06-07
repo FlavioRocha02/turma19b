@@ -1,27 +1,25 @@
 package exemplos.exemplo01;
 
 public class Funcionario {
-    //protected String nome;
     private String nome;
     private double salario;
 
-    // Construtor
-    public Funcionario(String nome){
+    public Funcionario(String nome) {
         this.nome = nome;
         this.salario = 0;
     }
 
-    //Overload - polimorfismo
-    public Funcionario(String nome, double salario){
+    // Overload - polimorfismo
+    public Funcionario(String nome, double salario) { // construtor
         this.nome = nome;
         this.salario = salario;
     }
-
-    public String imprimir(){
+    
+    public String imprimir() {
         return nome + " : " + salario;
     }
 
-    public void aumentarSalario(double perc){
+    public void aumentarSalario(double perc) {
         salario = salario + salario * perc;
     }
 
@@ -29,4 +27,5 @@ public class Funcionario {
     public String toString() {
         return nome + " : " + salario;
     }
+    
 }

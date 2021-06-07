@@ -2,20 +2,19 @@ package exemplos.exemplo01;
 
 public class App {
     public static void main(String[] args) {
-        Funcionario f = new Funcionario("Flavio",1000);
-        Funcionario f2 = new Funcionario("Rocha");
-        Gerente g = new Gerente("Arnaldo", 1000, 10);
+        Funcionario func = new Funcionario("Emerson", 1000);
+        Funcionario func2 = new Funcionario("Ricardo");
+        Gerente ger = new Gerente("Arnaldo", 1000, 10);
 
-        f.aumentarSalario(0.1);
-        f2.aumentarSalario(0.1);
-        g.aumentarSalario(0.1);
+        func.aumentarSalario(0.1);
+        func2.aumentarSalario(0.1);
+        ger.aumentarSalario(0.1);
 
-        System.out.println(f.imprimir());
-        System.out.println(g.imprimir());
-        System.out.println(f2.imprimir());
+        System.out.println(func.imprimir());
+        System.out.println(func2.imprimir());
+        System.out.println(ger.imprimir());
 
-        System.out.println(f);
-        System.out.println(g);
-
+        System.out.println(func);
+        System.out.println(ger);
     }
 }
