@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama JavaScript</title>
+
+    <!--Criar um componente em javascript (JS)-->
+    <script>
+        //Comando para fazer um alerta
+        //alert ("Olá, boa tarde seja bem vindo!!!");
+        //Criar variaveis em js
+        /*
+        var empresa="Gama Academy";
+        var mensagem="Olá sejam todos bem vindos a "
+        alert (mensagem + empresa);
+        */
+        /*
+        var nome = prompt("Olá seja bem vindo, qual o seu nome?", "Insira seu nome");
+        alert("Seja bem vindo "+nome);
+        */
+        function mensagem() {
+            alert("Para maiores informações acesse: www.gama.academy");
+
+        }
+        function validar(){
+            var nome=contato_gama.nome_cliente.value;
+            var email=contato_gama.email_cliente.value;
+            var data=contato_gama.data_cadastro.value;
+
+            //alert(nome + " - " + email + " data de cadastro: " + data);
+
+            if(nome==""){
+                alert("O preenchimento do campo nome é obrigatório");
+                contato_gama.nome_cliente.focus();
+                return false;
+            }
+
+            if(email==""){
+                alert("Preenchimento do campo email é obrigatório");
+                contato_gama.nome_cliente.focus();
+                return false;
+            }
+
+            alert("Olá " + nome +", você se cadastrou em "+data+" iremos lhe enviar os dados  para o nosso curso no seu email: " + email);
+
+            //insert.into itau clientes (nome_cliente, email_cliente, data_cadastro);
+
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <!--Cabeçalho da página-->
+    <h2>Olá seja bem vindo a Gama Academy</h2>
+    <!--Paragrafo da página-->
+    <p>Para obter maiores informações sobre a empresa, click no botão abaixo:</p>
+    <!--Criando um botão em html-->
+    <input type="button" onclick="mensagem()" value="Ajuda">
+    <br><br>
+    <h2>Formulário Teste</h2>
+    <br>
+    <form id="contato_gama" method="POST">
+        nome:<input type="text" name="nome_cliente"><br><br>
+        email:<input type="email" name="email_cliente"><br><br>
+        data:<input type="date" name="data_cadastro"><br><br>
+        <input type="submit" onclick="validar()" value="Enviar">
+
+    </form>
+</body>
+</html>

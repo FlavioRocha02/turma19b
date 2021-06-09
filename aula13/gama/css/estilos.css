@@ -1,0 +1,77 @@
+/*
+<!--Criando um procedimento de estilos em CSS-->
+<!--Site com tabela de cores na internet-->
+<!--https://www.homehost.com.br/blog/tutoriais/tabela-de-cores-html/ -->
+*/
+
+    /* criando um padrão de estilos para os comandos nativos do HTML*/
+    p{
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(107, 11, 136);
+    }
+
+    h1{
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        color: rgb(13, 71, 13);
+    }
+    /*Criando um padrão de classe de estilos para ser aplicado na nossa página*/
+    .contexto{
+        font-size: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: darkgray;
+    }
+    .menu{
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: darkgreen;
+    }
+    body{
+        background-color: rgb(214, 203, 203);
+    }
+    form{
+        background-color: rgb(199, 238, 205);
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .campo_nome{
+        font-size: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 240px;
+        color:darkred;
+        background-color: rgb(218, 218, 218);
+    }
+    .campo_email{
+        font-size: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 260px;
+        color:darkred;
+        background-color: rgb(218, 218, 218);
+    }
+    .campo_senha{
+        font-size: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 80px;
+        color:darkred;
+        background-color: rgb(218, 218, 218);
+    }
+    
+     /*Criando estilos para nossa pagina com bootstrap*/
+     .container{
+         border: 3px solid black;
+     }
+     .div1{
+         background-color: yellow;
+     }
+     .div2{
+        background-color:green;
+    }
+    .div3{
+        background-color: blue;
+    }
+    .div4{
+        background-color:red;
+    }
+
